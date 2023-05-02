@@ -4,16 +4,6 @@
 WSPATH=${WSPATH:-'argo'}
 UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
 
-# 哪吒4个参数，ssl/tls 看是否需要，不需要的话可以留空，删除或在这4行最前面加 # 以注释
-NEZHA_SERVER="$NEZHA_SERVER"
-NEZHA_PORT="$NEZHA_PORT"
-NEZHA_KEY="$NEZHA_KEY"
-NEZHA_TLS="$NEZHA_TLS"
-
-# Argo 固定域名隧道的两个参数,这个可以填 Json 内容或 Token 内容，获取方式看 https://github.com/fscarmen2/X-for-Glitch，不需要的话可以留空，删除或在这三行最前面加 # 以注释
-ARGO_AUTH="$ARGO_AUTH"
-ARGO_DOMAIN="$ARGO_DOMAIN"
-
 # 安装系统依赖
 check_dependencies() {
   DEPS_CHECK=("wget" "unzip" "ss")
